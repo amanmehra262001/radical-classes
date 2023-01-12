@@ -1,0 +1,174 @@
+{% extends "base.html" %} // Inherits all the components from base template, including the header and footer
+{% load static %}
+
+{% block body %}
+<!-- Carousel -->
+<div id="carouselExampleControls" class="carousel slide h-50 overflow-hidden p-0 m-0" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div>
+                <section class="d-flex container-fluid justify-content-between p-0 m-0 carousel-item-pro">
+                    <div class="position-absolute mt-5 top-5 align-self-center carousel-item-pro" style="left: 10%;">
+                        <p class="w-100 text-uppercase font-monospace font-med">Are you a home tutor?</p>
+                        <h1 class="topic pt-2 pb-2 font-large">Radical <span style="color: maroon;">Classes</span></h1>
+                        <p class="width-80 font-monospace w-75 font-med">gives the opportunity for those who are
+                            iterested in teaching part time and looking for student who need home tution, please click
+                            the button below to register yourself</p>
+                        <button class="utility-button btn btn-outline-dark py-2 px-4 mt-3">Register Now</button>
+                    </div>
+                    <div class="hero-carousel-image">
+                        <img src="{% static 'assets/slider1.jpg' %}" alt="...">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div>
+                <section class="d-flex container-fluid justify-content-between p-0 m-0 carousel-item-pro">
+                    <div class="position-absolute mt-5 top-5 align-self-center carousel-item-pro" style="left: 10%;">
+                        <p class="w-100 text-uppercase font-monospace font-med">Are you a home tutor?</p>
+                        <h1 class="topic pt-2 pb-2 font-large">Radical <br><span style="color: maroon;">Classes</span>
+                        </h1>
+                        <p class="width-80 font-monospace w-75 font-med">gives the opportunity for those who are
+                            iterested in teaching part time and looking for student who need home tution, please click
+                            the button below to register yourself</p>
+                        <button class="utility-button btn btn-outline-dark py-2 px-4 mt-3">Register Now</button>
+                    </div>
+                    <div class="hero-carousel-image">
+                        <img src="{% static 'assets/slider2.jpg' %}" alt="...">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div>
+                <section class="d-flex container-fluid justify-content-between p-0 m-0 carousel-item-pro">
+                    <div class="position-absolute mt-5 top-5 align-self-center carousel-item-pro" style="left: 10%;">
+                        <p class="w-100 text-uppercase font-monospace font-med">Are you a home tutor?</p>
+                        <h1 class="topic pt-2 pb-2 font-large">Radical <br><span style="color: maroon;">Classes</span>
+                        </h1>
+                        <p class="width-80 font-monospace w-75 font-med">gives the opportunity for those who are
+                            iterested in teaching part time and looking for student who need home tution, please click
+                            the button below to register yourself</p>
+                        <button class="utility-button btn btn-outline-dark py-2 px-4 mt-3">Register Now</button>
+                    </div>
+                    <div class="hero-carousel-image">
+                        <img src="{% static 'assets/slider3.jpg' %}" alt="...">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Cards -->
+<section class="course-cards">
+    <div class="course-card bg-maroon">
+        <div><img src="{% static 'assets/scenery1.jpg'%}" alt=""></div>
+        <div class="p-4">
+            <h4>IIT/JEE</h4>
+            <p class>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quibusdam voluptatum impedit.
+                Doloremque, amet sapiente!</p>
+            <button class="utility-button btn btn-outline-light py-2 px-4 mt-3">Read More</button>
+        </div>
+    </div>
+    <div class="course-card bg-red">
+        <div><img src="{% static 'assets/scenery1.jpg'%}" alt=""></div>
+        <div class="p-4">
+            <h4>NEET/AIIMS</h4>
+            <p class>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quibusdam voluptatum impedit.
+                Doloremque, amet sapiente!</p>
+            <button class="utility-button btn btn-outline-light py-2 px-4 mt-3">Read More</button>
+        </div>
+    </div>
+    <div class="course-card bg-grey">
+        <div><img src="{% static 'assets/scenery1.jpg'%}" alt=""></div>
+        <div class="p-4">
+            <h4>Oympiads</h4>
+            <p class>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quibusdam voluptatum impedit.
+                Doloremque, amet sapiente!</p>
+            <button class="utility-button btn btn-outline-light py-2 px-4 mt-3">Read More</button>
+        </div>
+    </div>
+</section>
+
+<!-- Careers -->
+<section class="careers container mt-5 mb-5">
+    <div class="container">
+        <h3 class="font-large cl-maroon">Career You're Passionate <br><span class="cl-grey">About Is There For
+                You</span></h3>
+        <p class="cl-grey font-sml px-4">Whether your focus is on determining career direction, conducting a job search
+            or improving work performance, you will have access to one of our expert career consultants and career
+            tools.</p>
+        <div class="sticker-group">
+            <div class="sticker">
+                <h5>Career Coaching</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste esse veritatis quae accusamus
+                    quis?</p>
+            </div>
+            <div class="sticker">
+                <h5>Career Coaching</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste esse veritatis quae accusamus
+                    quis?</p>
+            </div>
+        </div>
+        <div class="sticker-group">
+            <div class="sticker">
+                <h5>Career Coaching</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste esse veritatis quae accusamus
+                    quis?</p>
+            </div>
+            <div class="sticker">
+                <h5>Career Coaching</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste esse veritatis quae accusamus
+                    quis?</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-maroon cl-white careers-form">
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="position-absolute img-text font-med cl-white p-2">Providing the best coaching services has always been the idea behind the Radical project</p>
+        <img class="opacity-low" src="{%static 'assets/careers-image.jpg'%}" alt="">
+    </div>
+        <form class="d-flex flex-column justify-content-center">
+            <div class="form-group mt-1">
+                <input type="text" class="form-control" id="userTopic" name="userTopic"
+                    placeholder="Topic you're interested in">
+            </div>
+            <div class="form-group mt-1">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name">
+
+            </div>
+            <div class="form-group mt-1">
+                <input type="email" class="form-control" id="useremail" name="useremail" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+
+            </div>
+            <div class="form-group mt-1">
+                <input type="number" class="form-control" id="userPhNmbr" name="userPhNmbr"
+                    placeholder="Enter your Phone Number">
+
+            </div>
+            <div class="form-group mt-1">
+                <textarea type="text" class="form-control" id="userDesc" name="userDesc"
+                    placeholder="Additional Request"></textarea>
+
+        </div>
+            <button type="submit" class="btn btn-outline-light utility-button mt-4">Submit</button>
+          </form>
+    </div>
+  </section>
+{% endblock %}
